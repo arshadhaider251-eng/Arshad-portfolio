@@ -1,0 +1,12 @@
+{
+  "name": "arshad-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"node server/index.js\" \"npm --prefix client run dev\"",
+    "install-all": "npm install && (cd client && npm install) && (cd server && npm install)"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
